@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natura</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap">
+    <style>
+        body {
+            background: url('pliki/tlo1.avif') center center fixed;
+            background-size: cover;
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        #title-image {
+            width: 300px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        #subtitle-image {
+            width: 300px;
+            height: auto;
+            margin: 0 0 5px 0;
+        }
+
+        .note {
+            color: black;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .footer {
+            color: black;
+            font-size: 12px;
+            margin-top: auto;
+            align-self: flex-end;
+            margin-right: 10px;
+        }
+
+        /* Dodane stylowanie dla paska menu */
+        .menu-bar {
+            background-color: #8cff8c; /* Kolor jasnozielony */
+            width: 100%; /* Długość od lewej do prawej krawędzi */
+            padding: 10px; /* Dodane wypełnienie dla estetyki */
+            box-sizing: border-box; /* Zapobiega przekraczaniu szerokości przez dodatkowe marginesy/pady */
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Dodane stylowanie dla hiperłączy w menu */
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            position: relative;
+            padding: 0 15px; /* Dodane wypełnienie dla każdego elementu menu */
+        }
+
+        .menu a:hover {
+            color: #cccccc;
+        }
+
+        /* Dodane stylowanie dla rozwijalnego menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #8cff8c; /* Kolor jasnozielony */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            width: 300px; /* Szerokość rozwijalnego menu */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Pasek menu -->
+    <div class="menu-bar">
+        <!-- Menu -->
+        <ul class="menu">
+            <li class="dropdown">
+                <a href="index.html">Menu</a>
+                <div class="dropdown-content">
+                    <a href="podstrona1.html">Wieloznaczność pojęć</a><br>
+                    <a href="podstrona2.html">Myśl filozoficzna</a><br>
+                    <a href="podstrona3.html">Naśladowanie natury</a><br>
+                    <a href="podstrona4.html">W teorii literatury</a><br>
+                    <a href="podstrona5.html">Natura vs. sztuka</a><br>
+                    <a href="podstrona6.html">Źródło twórczości i przeżyć estetycznych</a><br>
+                    <a href="podstrona7.html">Stan natury</a><br>
+                    <a href="index.html">Strona Główna</a><br>
+                    <!-- Dodaj więcej hiperłączy rozwijalnych według potrzeb -->
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <img id="title-image" src="pliki/tytul.png" alt="Natura">
+    <img id="subtitle-image" src="pliki/podtytul.png" alt="Autorka: Martyna Lalik">
+    <p class="note">Na tej stronie znajdują się informacje dotyczące hasła słownikowego N A T U R A,<br> opracowanego na podstawie<br>Słownika literatury polskiego Oświecenia pod redakcją Teresy Kostkiewiczowej.<br></p>
+
+    <!-- Dodany tekst pod filmem -->
+    <p class="note">Zapoznaj się również z mapą myśli. Możesz ją pobrać klikając w obrazek lub skanując kod QR.</p>
+
+    <!-- Dodane obrazy obok siebie w kontenerze z odstępem 150px -->
+    <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+        <a href="pliki/natura.png" target="_blank" download>
+            <img src="pliki/natura.png" alt="Obrazek Natura" height="350">
+        </a>
+        <div style="width: 150px;"></div> <!-- Przerwa 150px między obrazkami -->
+        <img src="pliki/qr.png" alt="Obrazek QR" height="250">
+    </div>
+
+    <p class="footer">
+        <br>
+        <br>
+        Projekt na przedmiot: Literatura polska: oświecenie<br>
+        Kierunek: polonistyka-komparatystyka, rok II<br>
+        Rok akademicki 2023/24<br>
+        Uniwersytet Jagielloński
+    </p>
+
+</body>
+
+</html>

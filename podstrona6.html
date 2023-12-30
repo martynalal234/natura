@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natura</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap">
+    <style>
+        body {
+            background: url('pliki/tlo1.avif') center center fixed;
+            background-size: cover;
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        #title-image {
+            width: 300px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        #subtitle-image {
+            width: 300px;
+            height: auto;
+            margin: 10px 0 5px 0; /* Zmiana marginesu dla lepszego wyglądu */
+        }
+
+        .note {
+            color: #000000; /* Zmiana koloru tekstu */
+            font-size: 18px;
+            margin: 10px 20px; /* Zmiana marginesów */
+            padding: 10px; /* Dodane wypełnienie dla estetyki */
+        }
+
+        .notegreen {
+            color: #000000; /* Zmiana koloru tekstu */
+            font-size: 18px;
+            margin: 10px 20px; /* Zmiana marginesów */
+            background-color: #8cff8c; /* Dodane tło */
+            padding: 10px; /* Dodane wypełnienie dla estetyki */
+        }
+
+        .green-background {
+            background-color: #8cff8c; /* Dodane tło */
+            padding: 10px; /* Dodane wypełnienie dla estetyki */
+            text-align: left; /* Dodane, aby tekst był na lewo */
+            margin: 10px 20px; /* Zmiana marginesów */
+        }
+
+        .footer {
+            color: #000000; /* Zmiana koloru tekstu */
+            font-size: 12px;
+            margin-top: auto;
+            align-self: flex-end;
+            margin-right: 10px;
+        }
+
+        /* Dodane stylowanie dla paska menu */
+        .menu-bar {
+            background-color: #8cff8c; /* Kolor jasnozielony */
+            width: 100%; /* Długość od lewej do prawej krawędzi */
+            padding: 10px; /* Dodane wypełnienie dla estetyki */
+            box-sizing: border-box; /* Zapobiega przekraczaniu szerokości przez dodatkowe marginesy/pady */
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Dodane stylowanie dla hiperłączy w menu */
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu a {
+            color: #000000; /* Zmiana koloru tekstu */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            position: relative;
+            padding: 0 15px; /* Dodane wypełnienie dla każdego elementu menu */
+        }
+
+        .menu a:hover {
+            color: #cccccc;
+        }
+
+        /* Dodane stylowanie dla rozwijalnego menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #8cff8c; /* Kolor jasnozielony */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            width: 300px; /* Szerokość rozwijalnego menu */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Dodane stylowanie dla kontenera tekstów na lewo i prawo */
+        .text-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Pasek menu -->
+    <div class="menu-bar">
+        <!-- Menu -->
+        <ul class="menu">
+            <li class="dropdown">
+                <a href="index.html">Menu</a>
+                <div class="dropdown-content">
+                    <a href="podstrona1.html">Wieloznaczność pojęć</a><br>
+                    <a href="podstrona2.html">Myśl filozoficzna</a><br>
+                    <a href="podstrona3.html">Naśladowanie natury</a><br>
+                    <a href="podstrona4.html">W teorii literatury</a><br>
+                    <a href="podstrona5.html">Natura vs. sztuka</a><br>
+                    <a href="podstrona6.html">Źródło twórczości i przeżyć estetycznych</a><br>
+                    <a href="podstrona7.html">Stan natury</a><br>
+                    <a href="index.html">Strona Główna</a><br>
+                    <!-- Dodaj więcej hiperłączy rozwijalnych według potrzeb -->
+                </div>
+            </li>
+        </ul>
+    </div>
+        <img id="title-image" src="pliki/tytul.png" alt="Natura">
+    <img id="subtitle-image" src="pliki/podtytul6.png" alt="Autorka: Martyna Lalik">
+
+
+
+ <div class="text-container">
+        <div class="notegreen">
+            <p>
+                 Oprócz natury, którą się naśladowało, posługiwało się<br>pojęciem „natury artysty” lub „natury pisarza”,<br>obejmującej zarówno jego uzdolnienia,<br>jak i <strong>stymulującą go energię twórczą</strong>.<br>To właśnie naturą artysty tłumaczy się<br>m.in. jego zdolność poznawania rzeczywistości.
+            </p>
+<img src="pliki/6zdj5.jpg" alt="Zdjęcie 1" height="150">
+        </div>
+
+        <div class="notegreen">
+            <p>
+      
+                Osobnym zagadnieniem jest wpływ natury<br>na twórczość artysty, której bezkres,<br>tajemniczość i szczególna wzniosłość jej<br>dzikości pobudza artystę i <strong>wprowadza<br>w stan natchnienia</strong>, który mógłby być jedynie<br>darem „niebios”.<br>
+            </p>
+<img src="pliki/6zdj4.jpg" alt="Zdjęcie 1" height="150">
+        </div>
+    </div>
+<div class="note">   
+Powraca tutaj topos literacki wywodzący się ze starożytności (Horacy), że <strong>wieś jest Arkadią poetyckości</strong>, że tylko „na łonie przyrody” poeta tworzy najsprawniej (w polskiej teorii literackiej takie postulaty wskazano m.in.: w <em>O nauce wierszopisarskiej </em> Wacława Rzewuskiego i <em>Sztuce rymotwórczej</em> Dmochowskiego). </div>
+ <div class="text-container">
+<div class="note">
+<p>Arkadia</P><br>
+<img src="pliki/6zdj2.jpg" alt="Zdjęcie 1" height="200">
+</div>
+<div class="note">
+<p>Horacy</P><br>
+<img src="pliki/6zdj3.jpg" alt="Zdjęcie 1" height="200">
+</div>
+<div class="note">
+<p>Franciszek Ksawerycd Dmochowski</P><br>
+<img src="pliki/4zdj1.jpg" alt="Zdjęcie 1" height="200">
+</div>
+
+</div>
+
+
+
+<div class="text-container">
+<div class="note">
+<img src="pliki/6zdj1.png" alt="Zdjęcie 1" height="175"></div>
+<img src="pliki/qr.png" alt="Zdjęcie 1" height="200"></div>
+</div>
+    <p class="footer">
+        <br>
+        <br>
+        Projekt na przedmiot: Literatura polska: oświecenie<br>
+        Kierunek: polonistyka-komparatystyka, rok II<br>
+        Rok akademicki 2023/24<br>
+        Uniwersytet Jagielloński
+    </p>
+</body>
+</html>

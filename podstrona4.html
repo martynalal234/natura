@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natura</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap">
+    <style>
+        body {
+            background: url('pliki/tlo1.avif') center center fixed;
+            background-size: cover;
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        #title-image {
+            width: 300px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        #subtitle-image {
+            width: 300px;
+            height: auto;
+            margin: 10px 0 5px 0; /* Zmiana marginesu dla lepszego wyglądu */
+        }
+
+        .note {
+            color: #000000; /* Zmiana koloru tekstu */
+            font-size: 18px;
+            margin: 10px 20px; /* Zmiana marginesów */
+            padding: 10px; /* Dodane wypełnienie dla estetyki */
+        }
+
+        .notegreen {
+            color: #000000; /* Zmiana koloru tekstu */
+            font-size: 18px;
+            margin: 10px 20px; /* Zmiana marginesów */
+            background-color: #8cff8c; /* Dodane tło */
+            padding: 10px; /* Dodane wypełnienie dla estetyki */
+        }
+
+        .green-background {
+            background-color: #8cff8c; /* Dodane tło */
+            padding: 10px; /* Dodane wypełnienie dla estetyki */
+            
+            margin: 10px 20px; /* Zmiana marginesów */
+        }
+
+	
+
+	/* Dodaj styl dla czerwonego tekstu */
+        .green-text {
+            color: red;
+        }
+
+
+
+        .footer {
+            color: #000000; /* Zmiana koloru tekstu */
+            font-size: 12px;
+            margin-top: auto;
+            align-self: flex-end;
+            margin-right: 10px;
+        }
+
+        /* Dodane stylowanie dla paska menu */
+        .menu-bar {
+            background-color: #8cff8c; /* Kolor jasnozielony */
+            width: 100%; /* Długość od lewej do prawej krawędzi */
+            padding: 10px; /* Dodane wypełnienie dla estetyki */
+            box-sizing: border-box; /* Zapobiega przekraczaniu szerokości przez dodatkowe marginesy/pady */
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Dodane stylowanie dla hiperłączy w menu */
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu a {
+            color: #000000; /* Zmiana koloru tekstu */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            position: relative;
+            padding: 0 15px; /* Dodane wypełnienie dla każdego elementu menu */
+        }
+
+        .menu a:hover {
+            color: #cccccc;
+        }
+
+        /* Dodane stylowanie dla rozwijalnego menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #8cff8c; /* Kolor jasnozielony */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            width: 300px; /* Szerokość rozwijalnego menu */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Dodane stylowanie dla kontenera tekstów na lewo i prawo */
+        .text-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Dodane stylowanie dla tabeli */
+        table {
+            width: 60%;
+            margin: 20px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ffffff;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center; /* Tekst wewnątrz komórek tabeli jest wyśrodkowany */
+        }
+
+        th {
+            background-color: #8cff8c; /* Kolor zielony dla nagłówka */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Pasek menu -->
+    <div class="menu-bar">
+        <!-- Menu -->
+        <ul class="menu">
+            <li class="dropdown">
+                <a href="index.html">Menu</a>
+                <div class="dropdown-content">
+                    <a href="podstrona1.html">Wieloznaczność pojęć</a><br>
+                    <a href="podstrona2.html">Myśl filozoficzna</a><br>
+                    <a href="podstrona3.html">Naśladowanie natury</a><br>
+                    <a href="podstrona4.html">W teorii literatury</a><br>
+                    <a href="podstrona5.html">Natura vs. sztuka</a><br>
+                    <a href="podstrona6.html">Źródło twórczości i przeżyć estetycznych</a><br>
+                    <a href="podstrona7.html">Stan natury</a><br>
+                    <a href="index.html">Strona Główna</a><br>
+                    <!-- Dodaj więcej hiperłączy rozwijalnych według potrzeb -->
+                </div>
+            </li>
+        </ul>
+    </div>
+        <img id="title-image" src="pliki/tytul.png" alt="Natura">
+    <img id="subtitle-image" src="pliki/podtytul4.png" alt="Autorka: Martyna Lalik">
+
+
+<div class="text-container">
+        <div class="notegreen">
+		<p> <strong> Franciszek Ksawery Dmochowski</strong></p>
+			<div class="text-container">
+				<div class="notegreen">
+					<img src="pliki/4zdj1.jpg" alt="Zdjęcie 1" height="180"></div>
+				<div class="notegreen">
+					<img src="pliki/4zdj3.jpg" alt="Zdjęcie 1" height="180"></div></div>
+			<p> Interesowało go to, co znajduje się między<br>naturą idealną a naturą czystą.<br> W swoich teoriach nawiązywał do empiryzmu<br>i teorii sensualistycznych, a w pismach wskazywał<br>na nowe orientacje estetyczne.</p>
+       	 </div>
+	<div class="notegreen">
+		<p><strong> Filip Neriusz Golański</strong></p>
+		<img src="pliki/4zdj4.png" alt="Zdjęcie 1" height="180">
+		<p> W myśl tendencji Dmochowskiego Golański<br>zwracał uwagę na bogactwo natury i rozmaitość ich dzieł.</p>
+       </div>
+    </div>
+
+<div class="text-container">
+        <div class="notegreen">
+		<p> <strong> Stanisław Kostka Potocki</strong></p>
+			<div class="text-container">
+				<div class="notegreen">
+					<img src="pliki/4zdj5.png" alt="Zdjęcie 1" height="180"></div>
+				<div class="notegreen">
+					<img src="pliki/4zdj6.png" alt="Zdjęcie 1" height="180"></div></div>
+			<p> W swoich rozważaniach na temat stylu<br>odnaleźć można było poglądy, w których<br>ogrom natury mógłby nie zachwycać<br>a wręcz przytłaczać ludzki rozum.<br>To czego umysł mógłby dokonać jest<br>niczym w porównaniu z potęgą natury.</p>
+       	 </div>
+	<div class="notegreen">
+		<p> <strong> Franciszek Karpiński </strong></p>
+			<div class="text-container">
+				<div class="notegreen">
+					<img src="pliki/4zdj7.jpg" alt="Zdjęcie 1" height="180"></div>
+				<div class="notegreen">
+					<img src="pliki/4zdj8.png" alt="Zdjęcie 1" height="180"></div></div>
+			<p> Uważał, że poeta powienien<br> czerpać ze wszystkiego, co natura jest w stanie ofiarować.<br>Sformułowanie "księga natury",<br> z której się czyta, stało się toposem.<br>Nie oznacza ona jednak, aby poznawać i dążyć do<br>rozumienia praw natury, ale by wyczytać<br>zawarte w niej uczucia i tajemnice.<br> <strong> Naturę utożsamia z przyrodą</strong><br>stanowiącą przedmiot zainteresowań artysty.</p>
+       </div>
+<br>
+<br>
+    </div>
+
+     <div class="text-container">
+        <div class="note">
+            <img src="pliki/3zdj1.jpg" alt="Zdjęcie 1" height="300">
+        </div>
+        <div class="notegreen">
+            <p>
+                <strong>W NURCIE SENTYMENTALNYM</strong><br><br><br>
+bardziej antropologicznie pojmowano naturę.<br>Człowiek był wyposażony w pewne dyspozycje naturalne – czyli<br>dane pierwotne leżące u źródeł jego istoty. <br>Ogarniający go kosmos i świat przyrody obejmowane<br>były jednym terminem <em>NATURA</em>. 
+            </p>
+        </div>
+    </div>
+    <p class="footer">
+        <br>
+        <br>
+        Projekt na przedmiot: Literatura polska: oświecenie<br>
+        Kierunek: polonistyka-komparatystyka, rok II<br>
+        Rok akademicki 2023/24<br>
+        Uniwersytet Jagielloński
+    </p>
+</body>
+</html>
